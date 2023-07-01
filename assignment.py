@@ -1,8 +1,10 @@
-age= int(input("Enter your age: "))
+str = input("Enter the string:")
 
-if age<18:
-  print("You are a minor.")
-elif age<68:
-  print("You are an adult.")
-else:
-  print("You are a senior.")
+vowels = 'a,e,i,o,u,A,E,I,O,U'
+str = str.lower()
+
+for i in str:
+    if i in vowels:
+        str = str.replace(i,"")
+
+print(str)
