@@ -1,10 +1,15 @@
-use todo list;
+CREATE DATABASE sales;
 
-create table todo list
-(
-    task_id int,
-    task_name varchar(255),
-    description varchar(255),
-    is_completed(255),
-    )
-    
+USE sales;
+CREATE TABLE orders (
+  order_id INT,
+  customer_id INT,
+  order_date DATE,
+  order_total DECIMAL(10, 2)
+);
+
+
+
+
+
+
